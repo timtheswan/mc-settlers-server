@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "Catan Game Rules",
+        "color": "gold"
+      },
+      {
+        "text": "By Tim Swanson",
+        "color": "yellow"
+      }
+    ]
+  }
+}

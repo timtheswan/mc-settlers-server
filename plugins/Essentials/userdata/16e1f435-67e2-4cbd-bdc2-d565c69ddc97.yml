@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1729125088574
+  login: 1729124983504
+money: '0'
+logoutlocation:
+  world: f7e2d6d3-de87-421a-8438-61585dad0302
+  world-name: world-catan-board
+  x: 6.320102921939081
+  y: 110.9375
+  z: 126.43788732652932
+  yaw: -85.19879913330078
+  pitch: 7.154890060424805
+last-account-name: TheFormidableFoe
+lastlocation:
+  world: f7e2d6d3-de87-421a-8438-61585dad0302
+  world-name: world-catan-board
+  x: 9.5
+  y: 104.20000004768372
+  z: 8.5
+  yaw: 163.6750030517578
+  pitch: 14.49634075164795
