@@ -2,7 +2,7 @@
  Contains the compiled resources for running a PaperMC server for MC Settlers
 
 # Setup Instructions 
-# Set Up/Update Java Development Kit (JDK)
+## Set Up/Update Java Development Kit (JDK)
 
 1. Run `java -version` in a terminal to make sure you have a working version of Java in version 21
 2. If needed, download and install JDK (21 recommended) at [this location](https://www.oracle.com/java/technologies/downloads/#jdk21-mac)
@@ -10,13 +10,13 @@
     2. Open the download file and install it following instructions for your OS
     3. Alternatively, if on mac, use `brew install openjdk@17` (preceded by `brew uninstall openjdk` if needed)
 
-# Set up other dependencies
+## Set up other dependencies
 
 ```bash
 brew install jq
 ```
 
-# Java Plugin VSCode Setup (if writing code)
+## Java Plugin VSCode Setup (if writing code)
 
 1. Open the `source/java/mc-settlers` directory in VSCode
 2. Install some/all of the following VSCode extensions to make your life easier:
@@ -26,7 +26,7 @@ brew install jq
     4. Test Explorer (`hbenl.vscode-test-explorer`)
     5. Java Test (`vscjava.vscode-java-test`)
 
-# Run Server
+## Run Server
 
 1. Open a terminal and navigate to where you pulled the repo
 2. Go into `mc-settlers-source/bash` and run `.start.sh`
@@ -52,6 +52,6 @@ brew install jq
 - You may have too new a version of Java running, type `java -version` to see what’s running.
 - If you get `zip END header not found`, you may have run the start script while the .jar was being compiled
 
-# Open Server in Minecraft
+## Open Server in Minecraft
 
 1. Open Minecraft in version `1.21` (TODO: Make compatible with more versions)
