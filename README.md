@@ -1,5 +1,6 @@
 # Minecraft Settlers
 MC Catan is a self-hostable Minecraft server for playing multiplayer games of Catan. It supports:
+- Minecraft version 1.21.1 only 
 - The full ruleset of the board game, with a few key modifications to scale to large numbers of players
 - Procedural generation of life-sized boards, with completely random tile placement
 - Settlements, cities, robber, merchants, and trading (via in-person dropping)
@@ -57,7 +58,7 @@ java -Xms8192M -Xmx8192M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+Paralle
 ```
 - If all goes well, the script will hang at `Timings reset` , the server is active!
 
-## Troubleshooting Java setup
+### Troubleshooting Java setup
 
 1. Run `java -version` in a terminal to make sure you have a working version of Java in version 21
 2. If needed, download and install JDK (21 recommended) at [this location](https://www.oracle.com/java/technologies/downloads/#jdk21-mac)
@@ -65,22 +66,24 @@ java -Xms8192M -Xmx8192M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+Paralle
     2. Open the download file and install it following instructions for your OS
     3. Alternatively, if on mac, use `brew install openjdk@17` (preceded by `brew uninstall openjdk` if needed)
 
-## Set up other dependencies
+3. You may need to set up other dependencies
 
 ```bash
 brew install jq
 ```
 
-- **Issues when running on Linux**
+4. Issues when running on Linux**
     - You may experience issues running the scripts due to to the `\r` carriage returns, you may need to remove those or adjust your settings to exclude them
 - If nothing happens, you may need to first install or [Set Up/Update Java Development Kit (JDK)](https://www.notion.so/Set-Up-Update-Java-Development-Kit-JDK-12c755b5bfdb803a95f7e312be1e6eec?pvs=21)
 - If things still won’t work, recompile the .jar in [Java Plugin VSCode Setup (if writing code)](https://www.notion.so/Java-Plugin-VSCode-Setup-if-writing-code-12c755b5bfdb8039a849d944078401c6?pvs=21)
 - You may have too new a version of Java running, type `java -version` to see what’s running.
 - If you get `zip END header not found`, you may have run the start script while the .jar was being compiled
 
-## Open Server in Minecraft
+# Starting a game
+- `/game create standard` creates a standard board
+- Wait for people to join, they can use the /team command to join/leave teams. Teams cannot be created after the game starts.
+- `/game start` triggers the start countdown. After that, a claiming round begins where everyone claims their first settlement/road, then their second
 
-1. Open Minecraft in version `1.21` (TODO: Make compatible with more versions)
 
 # More Pictures
 <img width="1920" height="1027" alt="2025-07-21_20 04 56" src="https://github.com/user-attachments/assets/de4a1df6-42d3-4ed1-be9a-e730b1c5463a" />
