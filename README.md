@@ -1,5 +1,43 @@
-# settlers-server
- Contains the compiled resources for running a PaperMC server for MC Settlers
+# Minecraft Settlers
+MC Catan is a self-hostable Minecraft server for playing multiplayer games of Catan. It supports:
+- The full ruleset of the board game, with a few key modifications to scale to large numbers of players
+- Procedural generation of life-sized boards, with completely random tile placement
+- Settlements, cities, robber, merchants, and trading (via in-person dropping)
+- Can handle games with any number of players, with boards of size 4 player, 6 player, 8 player, 10 player, and 12 player
+- Supports teams, with midgame joining
+- Game runtime will be 45-90 minutes, regardless of player count, and can be modified by changing the day speed
+- Dev cards are known as quests, and have a few house rules added (eg Corrupt Knight)
+- Configurability of
+  - Board size and shape
+  - Victory points to win, amounts needed for longest road/strongest army
+  - Day/night speed
+  - Wealth level for robbery on 7
+  - And more!
+
+<img width="1920" height="1027" alt="2025-07-21_20 02 26" src="https://github.com/user-attachments/assets/a5f9b5ae-669f-4062-82cb-ba3624845d02" />
+
+<img width="1920" height="1027" alt="2025-07-21_20 02 58" src="https://github.com/user-attachments/assets/9583ff3c-e6e6-46fa-a078-0c3becf4df41" />
+
+<img width="1920" height="1027" alt="2025-07-21_20 03 41" src="https://github.com/user-attachments/assets/a916e4f4-118e-40ae-8289-ee904a81f40d" />
+
+<img width="1920" height="1027" alt="2025-07-21_20 01 10" src="https://github.com/user-attachments/assets/d422090c-39d6-4af2-a8f0-b752c6a20ddc" />
+
+<img width="1920" height="1027" alt="2025-07-21_20 03 53" src="https://github.com/user-attachments/assets/e1e4409d-2fd2-4246-aeaa-c69849cb3efc" />
+4:1 trading GUI (sleazy merchant)
+
+
+# In Game Commands
+`/help` Get a list of all server commands
+`/game` Control the game board and state (create, start, next day)
+`/team` Join, create, or leave teams
+`/game changerule` modify game rules
+`/rules` view game rules
+`/tools` reset game tools (map, compass, item switcher, team chest, day voter, help book) if you're missing any 
+
+
+
+
+This repository contains the compiled resources for running a PaperMC server for MC Settlers.
 
 # Setup Instructions 
 ## Set Up/Update Java Development Kit (JDK)
@@ -55,3 +93,6 @@ brew install jq
 ## Open Server in Minecraft
 
 1. Open Minecraft in version `1.21` (TODO: Make compatible with more versions)
+
+# More Pictures
+<img width="1920" height="1027" alt="2025-07-21_20 04 56" src="https://github.com/user-attachments/assets/de4a1df6-42d3-4ed1-be9a-e730b1c5463a" />
