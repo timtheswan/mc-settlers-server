@@ -98,3 +98,6 @@ brew install jq
 <img width="1920" height="1027" alt="2025-07-21_20 03 53" src="https://github.com/user-attachments/assets/e1e4409d-2fd2-4246-aeaa-c69849cb3efc" />
 4:1 trading GUI (sleazy merchant)
 
+<img width="1920" height="1027" alt="2025-07-21_20 14 21" src="https://github.com/user-attachments/assets/d72b7937-c951-46ef-80a5-34723cc7d32f" />
+
+
