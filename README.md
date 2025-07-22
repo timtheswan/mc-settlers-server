@@ -38,7 +38,16 @@ MC Catan is a self-hostable Minecraft server for playing multiplayer games of Ca
 This repository contains the compiled resources for running a PaperMC server for MC Settlers.
 
 # Setup Instructions 
-## Set Up/Update Java Development Kit (JDK)
+## Init
+- Pull this repo
+- For each new game you need to set up a fresh copy of `world-empty-catan-board` that is named exactly `world-catan-board`
+- Then start the server by opening a terminal in this directory and running:
+```
+java -Xms8192M -Xmx8192M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui
+```
+- If all goes well, the script will hang at `Timings reset` , the server is active!
+
+## Troubleshooting Java setup
 
 1. Run `java -version` in a terminal to make sure you have a working version of Java in version 21
 2. If needed, download and install JDK (21 recommended) at [this location](https://www.oracle.com/java/technologies/downloads/#jdk21-mac)
@@ -51,35 +60,6 @@ This repository contains the compiled resources for running a PaperMC server for
 ```bash
 brew install jq
 ```
-
-## Java Plugin VSCode Setup (if writing code)
-
-1. Open the `source/java/mc-settlers` directory in VSCode
-2. Install some/all of the following VSCode extensions to make your life easier:
-    1. Java extension pack by Microsoft: https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack 
-    2. ESLint: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-    3. Intellisense Language Server for Java: https://marketplace.visualstudio.com/items?itemName=redhat.java
-    4. Test Explorer (`hbenl.vscode-test-explorer`)
-    5. Java Test (`vscjava.vscode-java-test`)
-
-## Run Server
-
-1. Open a terminal and navigate to where you pulled the repo
-2. Go into `mc-settlers-source/bash` and run `.start.sh`
-3. If all goes well, the script will hang at `Timings reset` , the server is active!
-
-**Explanation**
-
-- This script will first pull in the .jar file for the settlers plugin + source material for the datapack into the relevant locations
-- It will then run a generated command to execute `server.jar`
-    - *View generated command*
-        
-        ```bash
-        java -Xms8192M -Xmx8192M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui
-        ```
-        
-
-**Troubleshooting**
 
 - **Issues when running on Linux**
     - You may experience issues running the scripts due to to the `\r` carriage returns, you may need to remove those or adjust your settings to exclude them
