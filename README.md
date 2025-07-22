@@ -40,7 +40,17 @@ This repository contains the compiled resources for running a PaperMC server for
 # Setup Instructions 
 ## Init
 - Pull this repo
-- For each new game you need to set up a fresh copy of `world-empty-catan-board` that is named exactly `world-catan-board`
+- For each new game you need to set up a fresh copy of `world-empty-catan-board` that is named exactly `world-catan-board`, if you've already played the game you may need to also delete gameData.json
+  - This can be automated via a script like
+```
+#!/bin/bash
+# Overwrite the current catan board world with the template world
+echo 'Resetting the current catan board with the template map'
+rsync -a --delete ../../mc-settlers-server/world-empty-catan-board/ ../../mc-settlers-server/world-catan-board
+
+echo 'Deleting gameData.json...'
+rm ../../mc-settlers-server/gameData.json
+```
 - Then start the server by opening a terminal in this directory and running:
 ```
 java -Xms8192M -Xmx8192M -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui
