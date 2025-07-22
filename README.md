@@ -22,8 +22,6 @@ MC Catan is a self-hostable Minecraft server for playing multiplayer games of Ca
 
 <img width="1920" height="1027" alt="2025-07-21_20 01 10" src="https://github.com/user-attachments/assets/d422090c-39d6-4af2-a8f0-b752c6a20ddc" />
 
-<img width="1920" height="1027" alt="2025-07-21_20 03 53" src="https://github.com/user-attachments/assets/e1e4409d-2fd2-4246-aeaa-c69849cb3efc" />
-4:1 trading GUI (sleazy merchant)
 
 
 # In Game Commands
@@ -96,3 +94,7 @@ brew install jq
 
 # More Pictures
 <img width="1920" height="1027" alt="2025-07-21_20 04 56" src="https://github.com/user-attachments/assets/de4a1df6-42d3-4ed1-be9a-e730b1c5463a" />
+
+<img width="1920" height="1027" alt="2025-07-21_20 03 53" src="https://github.com/user-attachments/assets/e1e4409d-2fd2-4246-aeaa-c69849cb3efc" />
+4:1 trading GUI (sleazy merchant)
+
