@@ -1,6 +1,6 @@
 # Minecraft Settlers
 MC Catan is a self-hostable Minecraft server for playing multiplayer games of Catan. It supports:
-- Minecraft version 1.21.1 only 
+- Minecraft version 1.21 only 
 - The full ruleset of the board game, with a few key modifications to scale to large numbers of players
 - Procedural generation of life-sized boards, with completely random tile placement
 - Settlements, cities, robber, merchants, and trading (via in-person dropping)
