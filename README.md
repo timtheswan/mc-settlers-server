@@ -1,4 +1,5 @@
 # Minecraft Settlers
+[Give me feedback/bug reports](https://docs.google.com/forms/d/e/1FAIpQLSdoFWdQCqMdvCt24z42MMw0NANE2Ity3mkYUerKZ3uIS0NfPw/viewform?usp=header)
 Watch the video:
 
 [![Watch the video](https://img.youtube.com/vi/21tdjXpGVC8/0.jpg)](https://youtu.be/21tdjXpGVC8)
