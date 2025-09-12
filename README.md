@@ -1,7 +1,7 @@
 # Minecraft Settlers
 Watch the video:
 
-[![Watch the video]([https://img.youtube.com/vi/21tdjXpGVC8/0.jpg](https://github.com/user-attachments/assets/2d3e8373-639d-454f-81b8-1911655460fc))](https://youtu.be/21tdjXpGVC8)
+[![Watch the video](https://img.youtube.com/vi/21tdjXpGVC8/0.jpg)](https://youtu.be/21tdjXpGVC8)
 
 MC Settlers is a self-hostable Minecraft server for playing multiplayer games of the popular board game. It supports:
 - Minecraft version 1.21 only 
