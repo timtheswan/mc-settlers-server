@@ -3,3 +3,16 @@ logs/
 world-catan-board*
 world-catan-templates_nether/
 world-catan-templates_the_end/
+.dev/
+# Runtime-generated churn (server recreates all of these)
+cache/
+usercache.json
+version_history.json
+gameData.json
+banned-players.json.backup
+plugins/.paper-remapped/
+plugins/spark/tmp/
+plugins/LuckPerms/libs/
+plugins/LuckPerms/translations/repository/
+plugins/LuckPerms/luckperms-h2*.db
+.DS_Store
