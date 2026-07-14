@@ -21,3 +21,7 @@ PaperMC 1.21 server. Don't hand-edit compiled artifacts here — `plugins/Settle
 - `rsync --delete` world resets are destructive by design — only ever target `world-catan-board`.
 - `online-mode=true` blocks offline/bot clients; a dev override is needed for headless bot testing (flag before changing — this repo is also the public distribution).
 - Ops: single op `TheFormidableFoe` (level 4). Console has full permission regardless.
+
+## Git conventions
+
+Commit messages are agent-facing memory: top summary + exhaustive why/design/verification/follow-ups body; when Settlers.jar changes, reference the source commit it was built from. Search git history before re-deriving historical context. Full spec: `mc-settlers-source/docs/PROJECT.md` "Git conventions".
