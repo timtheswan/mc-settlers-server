@@ -1,8 +1,8 @@
 crash-reports/
 logs/
-world-catan-board*
-world-catan-templates_nether/
-world-catan-templates_the_end/
+world-settlers-board*
+world-settlers-templates_nether/
+world-settlers-templates_the_end/
 .dev/
 # Runtime-generated churn (server recreates all of these)
 cache/

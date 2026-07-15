@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Overwrite the current catan board world with the template world
-echo 'Resetting the current catan board with the template map'
-rsync -a --delete ./world-empty-catan-board/ ./world-catan-board
+# Overwrite the current settlers board world with the template world
+echo 'Resetting the current settlers board with the template map'
+rsync -a --delete ./world-empty-settlers-board/ ./world-settlers-board
 
 echo 'Deleting gameData.json...'
 rm gameData.json

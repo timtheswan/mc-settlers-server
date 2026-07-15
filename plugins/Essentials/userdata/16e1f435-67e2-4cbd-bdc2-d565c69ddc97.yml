@@ -21,7 +21,7 @@ timestamps:
 money: '0'
 logoutlocation:
   world: f7e2d6d3-de87-421a-8438-61585dad0302
-  world-name: world-catan-board
+  world-name: world-settlers-board
   x: 6.320102921939081
   y: 110.9375
   z: 126.43788732652932
@@ -30,7 +30,7 @@ logoutlocation:
 last-account-name: TheFormidableFoe
 lastlocation:
   world: f7e2d6d3-de87-421a-8438-61585dad0302
-  world-name: world-catan-board
+  world-name: world-settlers-board
   x: 9.5
   y: 104.20000004768372
   z: 8.5
