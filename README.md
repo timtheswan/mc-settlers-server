@@ -47,13 +47,13 @@ This repository contains the compiled resources for running a PaperMC server for
 # Setup Instructions 
 ## Init
 - Pull this repo
-- For each new game you need to set up a fresh copy of `world-empty-catan-board` that is named exactly `world-catan-board`, if you've already played the game you may need to also delete gameData.json
+- For each new game you need to set up a fresh copy of `world-empty-settlers-board` that is named exactly `world-settlers-board`, if you've already played the game you may need to also delete gameData.json
   - This can be automated via a script like
 ```
 #!/bin/bash
-# Overwrite the current catan board world with the template world
-echo 'Resetting the current catan board with the template map'
-rsync -a --delete ../../mc-settlers-server/world-empty-catan-board/ ../../mc-settlers-server/world-catan-board
+# Overwrite the current settlers board world with the template world
+echo 'Resetting the current settlers board with the template map'
+rsync -a --delete ../../mc-settlers-server/world-empty-settlers-board/ ../../mc-settlers-server/world-settlers-board
 
 echo 'Deleting gameData.json...'
 rm ../../mc-settlers-server/gameData.json
